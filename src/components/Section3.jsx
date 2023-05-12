@@ -19,8 +19,8 @@ const Section3 = () => {
             <span>{section3.btnText}</span>
             </div>
             
-            <Multi/>
-                {/* <Carousel  /> */}
+        
+                <Carousel  />
         </div>
         <div className='flex-1 flex justify-end'>
         <img src={section3.Image} alt="" />
