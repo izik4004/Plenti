@@ -3,7 +3,7 @@ import { nav } from "../data";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md"
 // import MobileNav from "../components/MobileNav";
-import Nav from "../components/Nav";
+import Nav from "./Nav";
 
 const Header = () => {
     const [mobileNav, setMobileNav] = useState(false);
