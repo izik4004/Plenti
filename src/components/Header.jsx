@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { nav } from "../data";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md"
-// import MobileNav from "../components/MobileNav";
+import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 
 const Header = () => {
@@ -18,35 +18,39 @@ const Header = () => {
     });
 
     return (
-        <header className="my-4 ">
-            
+        <header
+            className={`${isActive ? "lg:top-0 bg-white  shadow-2xl" : "lg;top-[60px]"
+                } py-6 lg:py-4 fixed w-full
+      transition-all z-10`}
+        >
+
             <div className="container mx-auto flex px-6 justify-between items-center">
-               <div className="flex items-center">
-                <a href="#"
-                    data-aos='fade-down'
-                >
-                    <img src={logo} alt="" />
-                </a>
-                <div className="hidden lg:flex px-10" 
-                    data-aos='fade-down'
+                <div className="flex items-center">
+                    <a href="#"
+                        data-aos='fade-down'
                     >
-                    <Nav />
-                </div>
+                        <img src={logo} alt="" />
+                    </a>
+                    <div className="hidden lg:flex px-10"
+                        data-aos='fade-down'
+                    >
+                        <Nav />
+                    </div>
                 </div>
 
                 <div className="flex space-x-4">
-                <button className="btn btn-sm btn-outline hidden lg:flex py-2.5 px-6"
-                    data-aos='fade-down'
-                  
-                >
-                    {loginText}
-                </button>
-                <button className="btn btn-sm btn-outline hidden bg-[#c72825] text-white lg:flex py-2.5 px-6 rounded-xl"
-                    data-aos='fade-down'
-                 
-                >
-                    {signupText}
-                </button>
+                    <button className="btn btn-sm btn-outline hidden lg:flex py-2.5 px-6"
+                        data-aos='fade-down'
+
+                    >
+                        {loginText}
+                    </button>
+                    <button className="btn btn-sm btn-outline hidden bg-[#c72825] text-white lg:flex py-2.5 px-6 rounded-xl"
+                        data-aos='fade-down'
+
+                    >
+                        {signupText}
+                    </button>
                 </div>
                 <button className="lg:hidden" onClick={() => setMobileNav(!mobileNav)}>
                     {mobileNav ? (
@@ -58,12 +62,12 @@ const Header = () => {
 
                 <div
                     className={`${mobileNav ? "left-0" : "-left-full"
-                        } fixed top-0 w-[60vw] lg:hidden transition-all bottom-0 bg-pink-400`}
+                        } fixed top-0 w-[80vw] lg:hidden transition-all bottom-0 bg-[#FFF8EE] `}
                 >
-                    {/* <MobileNav /> */}
+                    <MobileNav />
                 </div>
             </div>
-         </header>
+        </header>
     );
 };
 

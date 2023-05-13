@@ -11,9 +11,9 @@ const App = () => {
     })  
 
   return (
-    <div className='w-full'>
+    <>
       <Homepage/>
-    </div>
+    </>
   )
 }
 

@@ -10,18 +10,18 @@ import Section4 from '../components/Section4'
 import Section5 from '../components/Section5'
 
 const Homepage = () => {
-  return (
-    <div className=''>
-    <Header/>
-    <Hero/>
-    <Section1 />
-    <Section2/>
-    <Section3/>
-    <Section4/>
-    <Section5/>
-    <Footer/>
-    </div>
-  )
+    return (
+        <div className=''>
+            <Header />
+            <Hero />
+            <Section1 />
+            <Section2 />
+            <Section3 />
+            <Section4 />
+            <Section5 />
+            <Footer />
+        </div>
+    )
 }
 
 export default Homepage

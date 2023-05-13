@@ -16,11 +16,11 @@ const Section3 = () => {
                     <div>
                         <h2 className='text-5xl font-semibold'>{section3.title}</h2>
                         <p className='py-8'>{section3.subtext}</p>
-                       <a href="#" className='py-6 text-lg text-[#5480f4]'>{section3.btnText}</a>
-                        
+                        <a href="#" className='py-6 text-lg text-[#5480f4]'>{section3.btnText}</a>
+
                     </div>
-                    <div  className="hidden lg:block">
-                    <Carousel/>
+                    <div className="hidden lg:block">
+                        <Carousel />
                     </div>
                 </div>
                 <div className='flex-1 flex justify-end pt-6 lg:pt-0'>
