@@ -25,8 +25,9 @@ const Section4 = () => {
                     )
                 )}
             </ul>
-            <a href="http://">Get</a>
-            {/* <a className='pt-4'>Get Started</button> */}
+            <p className='py-6'>
+            <a href="#" className='text-xl text-[#5480f4]'>Get Started</a>
+            </p>
         </div>
         
     </div>

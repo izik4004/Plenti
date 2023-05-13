@@ -24,13 +24,12 @@ const Header = () => {
                <div className="flex items-center">
                 <a href="#"
                     data-aos='fade-down'
-                    data-aos-delay='1200'
                 >
                     <img src={logo} alt="" />
                 </a>
                 <div className="hidden lg:flex px-10" 
                     data-aos='fade-down'
-                    data-aos-delay='1200'>
+                    >
                     <Nav />
                 </div>
                 </div>
@@ -38,13 +37,13 @@ const Header = () => {
                 <div className="flex space-x-4">
                 <button className="btn btn-sm btn-outline hidden lg:flex py-2.5 px-6"
                     data-aos='fade-down'
-                    data-aos-delay='1400'
+                  
                 >
                     {loginText}
                 </button>
                 <button className="btn btn-sm btn-outline hidden bg-[#c72825] text-white lg:flex py-2.5 px-6 rounded-xl"
                     data-aos='fade-down'
-                    data-aos-delay='1400'
+                 
                 >
                     {signupText}
                 </button>

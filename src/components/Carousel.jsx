@@ -1,28 +1,26 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/swiper-bundle.min.css'
-import { Navigation, Pagination, Scrollbar } from 'swiper';
-// Import Swiper styles
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import {slides} from "../data"
+export default class MultipleItems extends Component {
+  render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    };
+    return (
+      <div>
+        <Slider {...settings}>
 
-
-export default () => {
-  return (
-    <Swiper
-    modules={{Navigation, Pagination, Scrollbar}}
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{clickable: true}}
-      scrollbar={{draggable:true}}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-    
-    </Swiper>
-  );
-};
+         {slides.map((slide) => (
+            <img src={slide.imageUrl} alt="" />
+         ))}
+        </Slider>
+      </div>
+    );
+  }
+}

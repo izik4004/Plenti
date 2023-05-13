@@ -18,11 +18,15 @@ import Image4 from "../src/assets/4.png"
 import Deal1 from "../src/assets/Deal.png"
 import Deal2 from "../src/assets/Deal2.png"
 import Deal3 from "../src/assets/Deal3.png"
+import Deal4 from "../src/assets/deal1.png"
+import Deal5 from "../src/assets/deals2.png"
+import Deal6 from "../src/assets/deals3.png"
 import Mockup5 from "../src/assets/mockup5.png"
 import Twitter from "../src/assets/Twitter.png"
 import Facebook from "../src/assets/facebook.png"
 import Linkedin from "../src/assets/linkedin.png"
 import Instagram from "../src/assets/instagram.png"
+import Group from "../src/assets/group1.png"
 
 
 
@@ -46,7 +50,7 @@ export const nav = {
 export const hero = {
     title: "Earn more while you shop on Plenti",
     subtext: "With plenti, you can get exclusive discounts and offers on your everyday purchase",
-    Image: Mockup4
+    Image: Group
 }
 
 export const services1 = {
@@ -96,18 +100,33 @@ export const slides = [
     {
       id: 1,
       caption: 'carousel-image-1.jpg',
-      imageUrl: Deal1,
+      imageUrl: Deal4,
     },
     {
       id: 2,
       caption: 'carousel-image-2.jpg',
-      imageUrl: Deal2,
+      imageUrl: Deal5,
     },
     {
       id: 3,
       caption: 'carousel-image-3.jpg',
-      imageUrl: Deal3,
+      imageUrl: Deal6,
     },
+    {
+        id: 4,
+        caption: 'carousel-image-3.jpg',
+        imageUrl: Deal4,
+      },
+      {
+        id: 5,
+        caption: 'carousel-image-3.jpg',
+        imageUrl: Deal5,
+      },
+      {
+        id: 6,
+        caption: 'carousel-image-3.jpg',
+        imageUrl: Deal6,
+      },
   ];
 
   export const SocialIcons = [Twitter, Linkedin, Facebook, Instagram]
