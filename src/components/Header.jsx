@@ -3,7 +3,7 @@ import { nav } from "../data";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md"
 // import MobileNav from "../components/MobileNav";
-import Nav from "./Nav";
+import Nav from "../components/Nav";
 
 const Header = () => {
     const [mobileNav, setMobileNav] = useState(false);
@@ -18,9 +18,9 @@ const Header = () => {
     });
 
     return (
-        <header className="my-4">
+        <header className="my-4 ">
             
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex px-6 justify-between items-center">
                <div className="flex items-center">
                 <a href="#"
                     data-aos='fade-down'

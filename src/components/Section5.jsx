@@ -6,8 +6,8 @@ const Section5 = () => {
     return (
         <div className=' bg-[#f2f7fe] flex lg:flex-row flex-col items-center justify-between p-10 mx-auto'>
 
-            <div className='container mx-auto flex items-center'>
-                <div className='flex-1 '>
+            <div className='container mx-auto flex lg:flex-row space-y-10 flex-col items-center'>
+                <div className='flex-1 text-center lg:text-left'>
                     <h2 className='text-5xl font-semibold'>{section5.title}</h2>
                     <p className='py-8'>{section5.subtext}</p>
                     <button className='bg-[#c72825] py-2.5 px-6 rounded-xl'>

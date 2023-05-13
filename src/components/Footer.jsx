@@ -6,7 +6,7 @@ const Footer = () => {
     const {navItems} = nav
   return (
     <footer className='bg-[#211a33] text-white'>
-    <div className='container mx-auto flex justify-between gap-10 py-16'>
+    <div className='container mx-auto flex justify-between gap-10 p-10 flex-col lg:flex-row'>
         <div className='flex flex-col justify-between'>
             <div>
             <img src={Image} alt="" />
@@ -47,7 +47,7 @@ const Footer = () => {
     </div>
 
     <div className='border-t-2 border-[#B5AEC2]'>
-    <div className='flex container mx-auto justify-between py-8 '>
+    <div className='flex container mx-auto justify-between p-10 lg:flex-row flex-col space-y-4 '>
         <div className='flex space-x-10'>
             <p>Terms & conditions</p>
             <p>Privacy policy</p>

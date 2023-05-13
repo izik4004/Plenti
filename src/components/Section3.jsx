@@ -3,26 +3,26 @@
 
 import React from 'react'
 import { section3 } from '../data'
-import Carousel from './carousel/Carousel'
-import Multi from './Multi'
+// import Carousel from './Carousel'
+// import Multi from './Multi'
 
 const Section3 = () => {
 
   return (
     <div className='bg-[#f5f2f8] '>
-    <div className='container grid grid-cols-2 lg:flex-row flex-col items-center justify-center p-20 mx-auto'>
+    <div className='container grid  lg:grid-cols-2 grid-cols-1 lg:flex-row p-10 flex-col items-center justify-center lg:p-20 mx-auto'>
         
         <div className='flex-1'>
             <div>
             <h2 className='text-5xl font-semibold'>{section3.title}</h2>
             <p className='py-8'>{section3.subtext}</p>
-            <span>{section3.btnText}</span>
+            <span className='py-6'>{section3.btnText}</span>
             </div>
             
         
-                <Carousel  />
+                {/* <Carousel  /> */}
         </div>
-        <div className='flex-1 flex justify-end'>
+        <div className='flex-1 flex justify-end md:pt-6'>
         <img src={section3.Image} alt="" />
         </div>
     </div>

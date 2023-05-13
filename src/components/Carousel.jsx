@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'
+// import 'swiper/swiper-bundle.min.css'
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 // Import Swiper styles
 
