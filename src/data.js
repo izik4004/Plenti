@@ -25,7 +25,7 @@ import Mockup5 from "../src/assets/mockup5.png"
 import Twitter from "../src/assets/Twitter.png"
 import Facebook from "../src/assets/facebook.png"
 import Linkedin from "../src/assets/linkedin.png"
-import Instagram from "../src/assets/instagram.png"
+import Instagram from "../src/assets/Instagram.png"
 import Group from "../src/assets/group1.png"
 
 
